@@ -8,6 +8,7 @@ In next versions will be added the configuration of css tags and the integration
 
 Example of use
 
+```
 <div id="jsForm"></div>
 <script>
   $('#jsForm').jsForms({
@@ -17,3 +18,4 @@ Example of use
      'fields': [] //Array with the values of the formulary
   });
 </script>
+```
