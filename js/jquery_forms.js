@@ -26,19 +26,11 @@
             $(this).css('background-color', config.color)
             		.css('margin',config.margin)
             		.css('width',config.width);
-            if (config.fields.length === 0) {
-            	console.log('Es vacio');
-            }
-            else{
-            	console.log('Is full');
-
+            if (config.fields.length !== 0) {
             	var fields = config.fields;
             	fields.forEach(function(field, index){
-            		console.log(index);
             		$result.append($("<div>").addClass(JS_DIV_QUESTION)
             			.append($("<label>").text(field.question).addClass(JS_LABEL_CLASS)));
-            		
-            		
 
             		if(field.type === "open"){
             			$result.append($("<input>").text(field.question)
