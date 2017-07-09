@@ -33,7 +33,7 @@
             			.append($("<label>").text(field.question).addClass(JS_LABEL_CLASS)));
 
             		if(field.type === "open"){
-            			$result.append($("<input>").text(field.question)
+            			$result.append($("<input>")
             				.attr("name","".concat(JS_INPUT_NAME,index))
             				.addClass(JS_INPUT_CLASS));
             		}
