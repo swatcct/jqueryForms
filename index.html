@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<title>
+    JS Form Sample
+</title>
+<link rel="stylesheet" href="css/js_form.css" />
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script src="js/jquery_forms.js">
+
+</script>
+<div id="jsForm"></div>
+<script>
+    $('#jsForm').jsForms({
+        'action':'/',
+        'method':'GET',
+        'id':'jsfrm001',
+        'color': '#fff',//Optional value
+        'width': '80%',//Optional value
+        'margin': '0',//Optional value
+        'fields': [{ question: 'hola', type: 'open' }, { question: 'hola2', type: 'boolean' }] //Array with the values of the formulary
+    });
+
+</script>
+
+</html>
